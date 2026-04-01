@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>이삭토스트 | 오늘도 따뜻하고 달콤한</title>
+    <meta name="description" content="한 손에 담긴 든든한 한 끼, 오늘도 따뜻한 토스트로 마음을 전하는 이삭토스트입니다.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Noto+Sans+KR:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+
+    <!-- Header & Navigation -->
+    <nav>
+        <div class="logo">
+            <img src="assets/logo.png" alt="Isaac Toast Logo">
+            <span>이삭토스트</span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#brand">브랜드</a></li>
+            <li><a href="#menu">메뉴</a></li>
+            <li><a href="#social">사회공헌</a></li>
+            <li><a href="#community">커뮤니티</a></li>
+            <li><a href="#customer">고객게시판</a></li>
+            <li><a href="#franchise">가맹안내</a></li>
+        </ul>
+        <div class="auth-btns">
+            <a href="#" class="btn-primary">주문하기</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="brand">
+        <div class="hero-text fade">
+            <h1>오늘도 <span>따뜻하고</span><br>달콤한, 이삭토스트</h1>
+            <p>한 손에 담긴 든든한 한 끼, 한 입에 퍼지는 미소.<br>어김없이 따뜻한 토스트가 기다리는 곳, 이삭토스트 입니다.</p>
+            <div class="hero-btns">
+                <a href="#menu" class="btn-primary">메뉴 보러가기</a>
+            </div>
+        </div>
+        <div class="hero-img fade">
+            <!-- Simulated Banner Image -->
+            <div style="background: linear-gradient(135deg, #fdf5e6, #ffd700); width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; font-weight: 700; color: #8b4513; font-size: 1.5rem; text-align: center; padding: 2rem;">
+                Freshly Baked <br> Warm & Sweet <br> Isaac Toast
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu">
+        <div class="section-title">
+            <h2>다양하고 건강한 메뉴</h2>
+            <p>신선한 재료로 정성을 다해 만듭니다.</p>
+        </div>
+
+        <div class="menu-tabs">
+            <div class="tab-btn active" onclick="filterMenu('all')">전체</div>
+            <div class="tab-btn" onclick="filterMenu('toast')">토스트</div>
+            <div class="tab-btn" onclick="filterMenu('set')">세트</div>
+            <div class="tab-btn" onclick="filterMenu('side')">사이드</div>
+            <div class="tab-btn" onclick="filterMenu('drink')">음료</div>
+        </div>
+
+        <div class="menu-grid">
+            <!-- Menu Item 1 -->
+            <div class="menu-card" data-category="toast">
+                <div class="card-img">
+                    <div style="background: #eee; width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; color: #999;">Shrimp Special</div>
+                </div>
+                <h3>새우 스페셜</h3>
+                <span>Shrimp Special</span>
+            </div>
+            <!-- Menu Item 2 -->
+            <div class="menu-card" data-category="toast">
+                <div class="card-img">
+                    <div style="background: #eee; width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; color: #999;">Ham Cheese</div>
+                </div>
+                <h3>햄치즈 토스트</h3>
+                <span>Ham Cheese</span>
+            </div>
+            <!-- Menu Item 3 -->
+            <div class="menu-card" data-category="toast">
+                <div class="card-img">
+                    <div style="background: #eee; width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; color: #999;">Soy Crunch</div>
+                </div>
+                <h3>소이 크런치 치킨</h3>
+                <span>Soy Crunch Chicken</span>
+            </div>
+            <!-- Menu Item 4 -->
+            <div class="menu-card" data-category="toast">
+                <div class="card-img">
+                    <div style="background: #eee; width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; color: #999;">Bacon Best</div>
+                </div>
+                <h3>베이컨 베스트</h3>
+                <span>Bacon Best</span>
+            </div>
+            <!-- Menu Item 5 -->
+             <div class="menu-card" data-category="side">
+                <div class="card-img">
+                    <div style="background: #eee; width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; color: #999;">Coleslaw</div>
+                </div>
+                <h3>코울슬로</h3>
+                <span>Coleslaw</span>
+            </div>
+            <!-- Menu Item 6 -->
+            <div class="menu-card" data-category="drink">
+                <div class="card-img">
+                    <div style="background: #eee; width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; color: #999;">Americano</div>
+                </div>
+                <h3>아메리카노</h3>
+                <span>Americano</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Franchise Section -->
+    <section class="franchise" id="franchise">
+        <h2>이삭토스트와 달콤한 동행을 함께할<br>가맹점주님을 모집합니다.</h2>
+        <p>함께 성장하며 나눔의 가치를 실현할 파트너를 기다립니다.</p>
+        <a href="#" class="btn-white">가맹 상담 신청하기</a>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-top">
+            <div class="footer-col">
+                <h4>브랜드</h4>
+                <ul>
+                    <li><a href="#">이삭토스트 소개</a></li>
+                    <li><a href="#">CEO 인사말</a></li>
+                    <li><a href="#">연혁</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>고객센터</h4>
+                <ul>
+                    <li><a href="#">매장 칭찬하기</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">고객 문의</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Follow Us</h4>
+                <p>소셜 미디어에서 더 많은 소식을 확인하세요.</p>
+                <div class="social-links">
+                    <div class="social-icon"></div>
+                    <div class="social-icon"></div>
+                    <div class="social-icon"></div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>(주)이삭 | 사업자등록번호 : 305-81-70958 | 대표 : 김하경</p>
+            <p>COPYRIGHT © ISAAC. ALL RIGHTS RESERVED. Clone by Antigravity AI.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Init Lucide Icons
+        lucide.createIcons();
+
+        // Menu Filtering
+        function filterMenu(category) {
+            const cards = document.querySelectorAll('.menu-card');
+            const buttons = document.querySelectorAll('.tab-btn');
+            
+            // Update active button
+            buttons.forEach(btn => btn.classList.remove('active'));
+            event.target.classList.add('active');
+
+            // Filter items
+            cards.forEach(card => {
+                if (category === 'all' || card.getAttribute('data-category') === category) {
+                    card.style.display = 'block';
+                    card.style.animation = 'fadeIn 0.5s forwards';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        }
+    </script>
+</body>
+</html>
